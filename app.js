@@ -5,7 +5,8 @@ app_secreat = '97476086a87267c3ab55d51d2fac0ee7'
 express = require('express');
 mongoose = require('mongoose')
 WXBizDataCrypt=require("./WXBizDataCrypt");
-mongoose.connect('mongodb://localhost/wx')
+//var url="mongodb+srv://grasshopper001:WxMP@cluster0-3xirj.azure.mongodb.net/test?retryWrites=true/WxMP";
+mongoose.connect("mongodb+srv://grasshopper001:WxMP@cluster0-3xirj.azure.mongodb.net/test?retryWrites=true/wx")
 app = express()
 bodyParser = require('body-parser')
 app.use(bodyParser.json({limit: '50mb'}))
